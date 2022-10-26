@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(188 50 50);
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+/* #location {
+    text-align: center;
+}
+
+#search input{
+    border: 1px solid #b4b4b4;
+    padding: 0 30% 0;
+    text-align: center;
+} */
+
+#search input:focus {
+    /* border: 1px solid #b4b4b4; */
+    color: rgb(68, 54, 68);
+}
+#location-logo img{
+    position:relative;
+    top:-5px;
+}
+
+.right-header {
+    width: 26%;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-around;
+}
+
+#login-signup {
+    background-color: #efefef;
+    padding: 0 3% 0 3%;
+}
+
+#login-signup a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+#login-signup a {
+    text-decoration: none;
+}
+
+.navigationbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #252525;
+    /* border: 2px solid purple; */
+}
+
+.navigationbar>div a {
+    text-decoration: none;
+    color: white;
+}
+
+/* .navigationbar-hover {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.navigationbar-hover-items {
+    display: none;
+}
+
+.navigationbar-btn {
+    width: 100%;
+    padding: 6px 20px 6px 20px;
+    background-color: #252525;
+    color: white;
+}
+
+.navigationbar-btn:hover {
+    background-color: #000;
+    text-decoration: underline;
+}
+
+#footer-end {
+    /* background-color: #252525; */
+    background-image: linear-gradient(to bottom right,#252525 , rgb(95, 95, 93));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer-end>div a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer-end>div a:hover {
+    text-decoration: underline;
+}
+
+#footer-data {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#footer-end h1 {
+    color: silver;
+}
+
+#footer-end div ul li {
+    list-style: none;
+    padding: 0;
+}
+
+#footer-end .follow-us ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}

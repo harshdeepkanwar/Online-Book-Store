@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.category-heading{
+    height: 50px;
+    width: 98vw;
+    background-color: rgb(172, 159, 119);
+    text-align: center;
+    padding-top:30px;
+    padding-bottom: 20px;
+    /* border: rgb(223, 2, 2) 1px solid; */
+    color: rgb(136, 75, 88);
+}
+.category-containers{
+    padding: 80px;
+    height: auto;
+}
+.single-book-container{
+    display: inline-block;
+    margin: 30px;
+    height: fit-content;
+    border-bottom: gainsboro 1px groove;
+}
+.image-preview{
+    /* display: inline-block; */
+    height: 200px;
+    padding: 10px;
+    text-align: center;
+    float: left;
+}
+.image-preview img{
+    height: 180px;
+}
+.image-preview img:hover{
+    box-shadow: 2px 2px 1px 1px silver;
+}
+.book-detail-preview{
+    /* display:inline-block; */
+    margin: 30px 10px 10px 20px;
+    float: left;
+}
+.book-detail-preview a {
+    text-decoration: none;
+    color: rgb(48, 48, 46);
+    display: block;
+    width: 700px;
+    overflow:hidden;
+}
+.book-detail-preview a:hover{
+    color: rgb(75, 75, 71);
+    text-shadow: 1px 1px 2px whitesmoke;
+}
+.single-book-description{
+    font-size: small;
+    height: 30px;
+    width: 500px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.discount{
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(221, 218, 218));
+    font-size: small;
+    border-radius: 50px;
+    padding-top: 5px;
+}

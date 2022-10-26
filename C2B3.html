@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+    <title>HarryPotter-3 | Caves</title>
+    <link rel="stylesheet" href="bookstyle1.css">
+    <link rel="stylesheet" href="style2.css">
+    <style>        
+        .book-image img{
+            height: 450px;
+        }     
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header1">
+            <div id="logo">
+                <a href="index.html"><img src=".\logos\caves2.png" alt="logo-of-caves"></a>
+            </div>
+            <div id="location">
+                <div id="location-logo">
+    
+                    <img src=".\icons\location.png" alt="" height="40px" class="icon-location">
+                    <select id="mySelect" onchange="myFunction()">
+                        <!-- <option value=""><input type="text"></option> -->
+                        <option value="none">your location</option>
+                        <option value="New Delhi">New Delhi</option>
+                        <option value="Noida">Noida</option>
+                        <option value="Chandighar">Chandighar</option>
+                        <option value="Panchkula">Panchkula</option>
+                    </select>
+                </div>
+                
+            </div>
+            <div id="search">
+                <input type="search" placeholder="search.">
+            </div>
+            <div id="login">
+                <a href="login.html"><button><a href="login.html">login</a> &nbsp <a
+                            href="signup.html">signup</a></button></a>
+            </div>
+            <div id="cart">
+                
+            </div>
+            <div id="more">
+                <div class="more">
+                    <img src=".\icons\more.png" alt="more" class="more-img"></i>
+                    <div class="more-content">
+                        <p>welcome to caves.</p>
+                        <p>for any query you can <a href="contactus.html">contact</a> us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="header2">
+            <div class="category-box">
+                <button class="dropdown-category"><i>Chategories</i></button>
+                <div class="dropdown-content">
+                    <a href="C1.html">Human Development</a>
+                    <a href="C2.html">Fiction</a>
+                    <a href="C3.html">Sports</a>
+                    <a href="C4.html">Love</a>
+                    <a href="C5.html">Religion</a>
+                    <a href="C6.html">Science</a>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <main><br>
+        <section class="book-section">
+            <div class="book-image">
+                <img src=".\img\books\C2B3P1.jpg" alt="Harry Potter and the Prisoner of Azkaban">
+            </div><div class="book-info">
+                <div class="book-detais">
+                    <h1>Harry Potter and the Prisoner of Azkaban<br><span>Illustrated Edtn(Hardcover)</span></h1>
+                    <p>| Author : J.K.Rowling | Released : 1999</p>
+                    <!-- description of book -->
+                    
+                    <p class="description"><span class="description-word">Description : </span> Escape to Hogwarts with the unmissable series that has sparked a lifelong reading journey for children and families all over the world. The magic starts here.<br>
+                    Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. The magic starts here!<br>
+                    These editions of the classic and internationally bestselling Harry Potter series feature thrilling jacket artwork by award-winning illustrator Jonny Duddle. They are the perfect starting point for anyone who's ready to lose themselves in the greatest children's story of all time.
+                </p>
+                </div>
+                <div class="book-price">
+                    <div class="price">
+                        <div class="price-info">
+                            <div class="original">
+                                <label id="C1B1_OriginalPrice">Rs. 325</label>
+                            </div>
+                            <div class="ourprice">
+                                <label id="C1B1_ourPrice">Rs.299</label>
+                            </div>
+                        </div>
+                        <div id="C1B1_Discount" class="discount">8%<br><span> OFF </span></div>
+                    </div>
+                    <div class="stock-info">
+                        <div id="C1B1_Available" class="available">Available</div>
+                        <div class="shipping-info">
+                            <label id="C1B1_Business">Ships within <b>18-20 Business Days</b></label>
+                            <label id="C1B1_shipping"><br>Rs.39 shipping per item.</label>
+                            
+                            <div id="divNotifyMsg" class="notifymebox" style="display: none;">We will notify you once this book available in stock.</div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="payment-details">
+                    <div class="button-container">
+                        <form method="get" action="Checkout.html">
+                            <input type="text" name="price" value="Rs.299" style="display: none;">
+                            <button value="" class="buy-button">buy now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="others">
+            <span>related categories : </span>
+            <div class="related">
+                <a href="C2.html">fiction</a>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+    </main>
+    <!-- footer section -->
+    <footer class="footer" id="footer">
+        <!-- logo of our page -->
+        <div class="footer-logo">
+            <a href="index.html"><img src=".\logos\caves2.png"></a>
+        </div>
+        <div class="about-us">
+            <h1>About Us</h1>
+            <ul>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="locateus.html">Locate Us</a></li>
+                <li><a href="contactus.html">Blogs</a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <h1>Help</h1>
+            <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="termsandcondition.html">Terms and Conditions</a></li>
+            </ul>
+        </div>
+        <div class="follow-us">
+            <h1>Follow Us</h1>
+            <ul>
+                <li class="fevicon" id="facebook"><a href="https://facebook.com" target="_blank"><img
+                            src=".\icons\facebook.png" alt="profile facebook" height="40px"></a></li>
+                <li class="fevicon" id="instagram"><a href="https://instagram.com" target="_blank"><img
+                            src=".\icons\instagram.png" alt="profile instagram" height="40px"></a></li>
+                <li class="fevicon" id="twitter"><a href="https://twitter.com" target="_blank"><img
+                            src=".\icons\twitter.png" alt="profile twitter" height="40px"></a></li>
+                <li class="fevicon" id="gmail"><a href="https://gmail.com" target="_blank"><img src=".\icons\gmail.png"
+                            alt="mail" height="40px"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

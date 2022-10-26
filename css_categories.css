@@ -1,0 +1,52 @@
+#categories {
+    width: 85vw;
+    height: 100%;
+    margin: 4% auto 4% auto;
+    border-top: 4px solid silver;
+    border-left: 4px solid silver;
+    border-bottom: 1px solid silver;
+    border-right: 1px solid silver;
+}
+
+#categories h1 {
+    text-align: center;
+}
+
+.box {
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3%;
+    flex-wrap: wrap;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border: 1.7px solid rgba(226, 226, 240, 0.8);
+    margin: 3%;
+    padding: 3%;
+    transition: all 0.266s ease-in-out;
+    box-shadow: 2px 2px 16px -5px blue;
+}
+.book a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+.book p {
+    position: relative;
+    bottom: -10px;
+    font-weight: 800;
+}
+
+.book:hover {
+    box-shadow: 4px 3px 30px 3px red;
+    transform: scale(1.1);
+    z-index: 2;
+    border-radius: 5%;
+
+}

@@ -1,0 +1,124 @@
+main{
+    width: 100vw;
+    background-color: white;
+}
+.book-section{
+    margin-top: 70px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-left: grey 3px groove;
+    border-top: grey 3px groove;
+    border-right: silver 1px solid;
+    border-bottom: silver 1px solid;
+
+    padding: 5px 5px 5px 5px;
+}
+
+.book-image{
+    display: inline-block;
+    width: 30%;
+}
+
+.book-info{
+    display: inline-block;
+    width: 70%;
+}
+h1 span{
+    font-size: large;
+}
+.description{
+    background: linear-gradient(#dadada, #b9b9b9);
+}
+.description-word{
+    font-size: 20px;
+    color: green;
+}
+.price{
+    height: 100px;
+    width: 130px;
+    padding: 12px;
+    display: inline-block;
+}
+.price-info{
+    display: inline-block;
+}
+.original{
+    height: 20px;
+    color: rgb(83, 81, 81);
+    text-decoration: line-through;
+    font-size: 15px;
+    display: block;
+}
+.ourprice{
+    height: 20px;
+    color: maroon;
+    font-size: 20px;
+    display: block;
+}
+.discount{
+    height: 41px;
+    width: 42px;
+    border: slategray 2px solid;
+    background-image: url("./icons/discount.png");
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 50%;
+    padding: 15px 9px 5px 10px;
+    font-size: large;
+    font-weight: 20px;
+    display: inline-block;
+}
+.stock-info{
+    display: inline-block;
+    background-image: url(./icons/stockleft.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 30px;
+}
+.available{
+    color: springgreen;
+}
+.notavailable{
+    color: crimson;
+}
+.book-price{
+    margin-top: 10px;
+}
+.shipping-info{
+    color: steelblue;
+}
+.button-container{
+    display: inline-block;
+}
+.buy-button{
+    height: 25px;
+    width: 150px;
+    background-color: rgb(206, 163, 45);
+}
+.buy-button:hover{
+    background-color: rgb(223, 179, 58);
+    box-shadow: 0px 0px 5px 0px orange;
+}
+.cart-button{
+    height: 25px;
+    width: 150px;
+    background-color: rgb(165, 165, 165);
+}
+.cart-button:hover{
+    background-color: rgb(179, 178, 178);
+    box-shadow: 0px 0px 5px 0px rgb(34, 34, 34);
+}
+.others{
+    margin: 50px 150px 10px 150px;
+}
+.others span{
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.others div a{
+    text-decoration: none;
+    color: grey;
+}
+.hidden{
+    visibility: hidden;
+}

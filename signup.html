@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+    <title>Signup | Caves</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        main {
+            margin: 50px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        /* details */
+        #container {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0 auto;
+            padding: 20px;
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+                0 0 0 2px rgb(255, 255, 255),
+                0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+        }
+
+        #container form a {
+            text-decoration: none;
+            color: black;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input:hover {
+            box-shadow: 1px 1px rgb(90, 88, 81);
+        }
+
+        a {
+            text-decoration: none;
+            color: grey;
+        }
+
+        a:hover {
+            text-shadow: grey 0.5px 0.5px;
+        }
+
+        .signin {
+            background-color: rgb(199, 158, 46);
+            margin-top: 10px;
+        }
+
+        .signin:hover {
+            box-shadow: 0px 0px 1px 1px rgb(95, 110, 69);
+        }
+
+        /* old account part */
+        #second-container {
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+        }
+
+        #second-container * {
+            padding: 0px 15px 0 15px;
+        }
+
+        .signup:hover {
+            background-color: silver;
+        }
+
+        /* footer */
+        footer {
+            /* position: absolute; */
+            bottom: 50px;
+            margin: 2% 0 0 0;
+        }
+
+        li {
+            display: inline-block;
+            list-style-type: none;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src=".\logos\caves2.png" alt="logo-of-caves" height="80%"></a>
+        </div>
+    </header>
+    <main>
+        <div id="container">
+            <form action="./login.html" onsubmit="return validation()">
+                <h1>Create an account</h1>
+                <label for="email">Enter email</label><br>
+                <input type="email" name="email" id="email"><br>
+                <label for="password">Enter your password</label><br>
+                <input type="password" name="password" id="password"><br>
+                <label for="password-confirm">Enter password again</label><br>
+                <input type="password" name="password" id="password-confirm"><br>
+                <button value="submit" class="signin">Sign-in</button>
+            </form>
+        </div>
+        <div id="second-container">
+            already have an account<br>
+            <a href="login.html"><button class="signup">Login</button></a>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <ul>
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- <script src="./jquery-3.6.0.js"></script> -->
+    <script>
+
+        // document.getElementById('password-confirm').disabled=true;
+
+        function validation() {
+            var email = document.getElementById('email').value;
+            var pwd = document.getElementById('password').value;
+            var cpwd = document.getElementById('password-confirm').value;
+            cpwd.disabled=true;
+
+            if (email == '') {
+                alert("Invalid Email");
+                return false;
+            }
+
+            if (email.indexOf('@') <= 0) {
+                alert("Invalid @ position");
+                return false;
+            }
+
+            if ((email.charAt(email.length - 4)) != '.' && (email.charAt(email.length - 3) != '.')) {
+                alert("Invalid Period(.) position in Email");
+                return false;
+            }
+
+            if (pwd == '') {
+                alert("Password cannot be empty");
+                return false;
+            }
+
+            if (!(pwd.length >= 8 && pwd.length < 24)) {
+                alert("Password must be 8 to 24 digits");
+                return false;
+            }
+
+            if (!((pwd.search(/[!@#$%^&*]/) >= 0) && (pwd.search(/[0-9]/) >= 0) && (pwd.search(/[A-Z]/) >= 0))) {
+                alert("Password must contain 1 Uppercase, 1 Lowecase, 1 Number and special Character(Symbol)");
+                return false;
+            }
+
+            if(cpwd != pwd){
+                alert("Passwords do not match");
+                return false;
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+    <title>Home | Caves</title>
+
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="css_common.css">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="/bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="header1.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <style>
+        .book img{
+            height: 369px;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div id="header1">
+            <div id="logo">
+                <a href="index.html"><img src=".\logos\caves2.png" alt="logo-of-caves"></a>
+            </div>
+            <div id="location">
+                <div id="location-logo">
+
+                    <img src=".\icons\location.png" alt="" height="40px" class="icon-location">
+                    <select id="mySelect" onchange="myFunction()">
+                        <!-- <option value=""><input type="text"></option> -->
+                        <option value="none">your location</option>
+                        <option value="New Delhi">New Delhi</option>
+                        <option value="Noida">Noida</option>
+                        <option value="Chandighar">Chandighar</option>
+                        <option value="Panchkula">Panchkula</option>
+                    </select>
+                </div>
+                
+            </div>
+            <div id="search">
+                <input type="search" placeholder="search.">
+            </div>
+            <div id="login">
+                <a href="login.html"><button><a href="login.html">login</a> &nbsp <a
+                            href="signup.html">signup</a></button></a>
+            </div>
+            <div id="cart">
+                
+            </div>
+            <div id="more">
+                <div class="more">
+                    <img src=".\icons\more.png" alt="more" class="more-img"></i>
+                    <div class="more-content">
+                        <p>welcome to caves.</p>
+                        <p>for any query you can <a href="contactus.html">contact</a> us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navigationbar">
+            <div>
+                <a href="humandevelopment.html"><button class="navigationbar-btn">Human Development</button></a>
+            </div>
+            <div>
+                <a href="fiction.html"><button class="navigationbar-btn">Fiction</button></a>
+            </div>
+            <div>
+                <a href="sports.html"><button class="navigationbar-btn">Sports</button></a>
+            </div>
+            <div>
+                <a href="love.html"><button class="navigationbar-btn">Love</button></a>
+            </div>
+            <div>
+                <a href="religion.html"><button class="navigationbar-btn">Religion</button></a>
+            </div>
+            <div>
+                <a href="science.html"><button class="navigationbar-btn">Science</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="quotes">
+        <div class="quote-box">
+            <p id="quote">
+                "Quote goes here.."
+            </p>
+            <small id="author">Author</small>
+        </div>
+        <button id="new-quote" style="border-radius: 50% 20% / 10% 40%;">New Quote</button>
+    </section>
+
+    <main class="main">
+
+        <section class="container-body">
+            <div class="left-book-category">
+                <h2>Category</h2>
+                <ul>
+                    <li><a href="C1.html" target="_blank">Human Development</a></li>
+                    <li><a href="C2.html" target="_blank">Fiction</a></li>
+                    <li><a href="C3.html" target="_blank">Sports</a></li>
+                    <li><a href="C4.html" target="_blank">Love</a></li>
+                    <li><a href="C5.html" target="_blank">Religion</a></li>
+                    <li><a href="C6.html" target="_blank">Scientific</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="scrolling-img" class="carousel-class">
+            <!-- <div>
+                    <img src=".\img\scrolling\scroll2_edited.jpg" width="500px" style="opacity: 0.75;" title="Creative SY-FY book">
+                    <img src=".\img\scrolling\scroll3_edited.jpg" width="500px" style="opacity: 0.75;">
+                    <img src=".\img\scrolling\scroll4_edited.jpg" width="500px" style="opacity: 0.75;">
+                    <img src=".\img\scrolling\scroll1_edited.jpg" width="500px" style="opacity: 0.75;">
+                    <img src=".\img\scrolling\scroll5_edited.jpg" width="500px" style="opacity: 0.75;">
+                    <img src=".\img\scrolling\scroll6_edited.jpg" width="500px" style="opacity: 0.75;">
+                </div> -->
+            <div id="carouselExampleIndicators" class="carousel carousel-img slide carousel-fade"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active " data-bs-interval="1600">
+                        <img src="img/scrolling/scroll1_edited.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1600">
+                        <img src="img/scrolling/scroll2_edited.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1600">
+                        <img src="img/scrolling/scroll3_edited.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1600">
+                        <img src="img/scrolling/scroll4_edited.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1600">
+                        <img src="img/scrolling/scroll5_edited.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1600">
+                        <img src="img/scrolling/scroll6_edited.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="right-books-container">
+                <hr style="border: 3px solid black;">
+
+                <div id="carouselExampleControls" class="carousel carousel-dark carousel-right-container-books slide "
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <div id="heading-best_seller" class="heading-right-container-books">
+                                <span>
+                                    Best Sellers
+                                </span>
+                            </div>
+                            <div class="row box">
+                                <div class="col-3 book">
+                                    <a href="C5B3.html" target="_blank"><img src="./img/books/C5B3P1.jpg" height="300px" width="200px" class="d-block w-100" alt="...">
+                                    <p>
+                                        Immortals of Meluha
+                                    </p></a>
+                                </div>
+                                <div class="col-3 book">
+                                    <a href="C4B2.html" target="_blank"><img src="./img/books/C4B2P1.jpg" height="300px" width="200px" class="d-block w-100" alt="...">
+                                    <p>
+                                        It Ends with Us
+                                    </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div id="heading-best_seller" class="heading-right-container-books">
+                                <span>
+                                    Best Sellers
+                                </span>
+                            </div>
+                            <div class="row box">
+                                <div class="col-3 book">
+                                    <a href="C2B4.html" target="_blank"><img src="./img/books/C2B4P1.png" height="300px" width="200px" class="d-block w-100" alt="...">
+                                    <p>
+                                        Harry Potter 4
+                                    </p>
+                                    </a>
+                                </div>
+                                <div class="col-3 book">
+                                    <a href="C5B1.html" target="_blank"><img src="./img/books/C5B1P1.jpeg" height="300px" width="200px" class="d-block w-100" alt="...">
+                                    <p>
+                                        Kalki
+                                    </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div id="heading-best_seller" class="heading-right-container-books">
+                                <span>
+                                    Best Sellers
+                                </span>
+                            </div>
+                            <div class="row box">
+                                <div class="col-3 book">
+                                    <a href="C4B3.html" target="_blank">
+                                    <img src="./img/books/C4B3P1.png" height="300px" width="200px" class="d-block w-100" alt="...">
+                                    <p>
+                                        Love happen Twice
+                                    </p>
+                                    </a>
+                                </div>
+                                <div class="col-3 book">
+                                    <a href="C3B3.html" target="_blank">
+                                    <img src="./img/books/C3B3P1.jpg" height="300px" width="200px" class="d-block w-100" alt="...">
+                                    <p>
+                                        Fab Five
+                                    </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <hr style="border: 3px solid black;">
+
+                <div id="carouselExampleControls-2" class="carousel carousel-dark carousel-right-container-books slide "
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <div id="heading-award-winner" class="heading-right-container-books">
+                                <span>
+                                    Award Winner
+                                </span>
+                            </div>
+                            <div class="row box">
+                                
+                                <div class="col-3 book">
+                                    <a href="C6B2.html" target="_blank">
+                                    <img src="./img/books/C6B2P1.jpg" height="300px" width="200px" class="d-block w-100" alt="...">
+                                    <p>
+                                        Cosmos
+                                    </p>
+                                    </a>
+                                </div>
+                                <div class="col-3 book">
+                                    <a href="C1B4.html" target="_blank">
+                                    <img src="./img/books/C1B4P1.jpg" height="300px" width="200px" class="d-block w-100" alt="...">
+                                    <p>
+                                        Rich Dad Poor Dad
+                                    </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div id="heading-award-winner" class="heading-right-container-books">
+                                <span>
+                                    Award Winner
+                                </span>
+                            </div>
+                            <div class="row box">
+                                <div class="col-3 book">
+                                    <a href="C5B5.html" target="_blank">
+                                    <img src="./img/books/C5B5P1.jpg" height="300px" width="200px" class="d-block w-100" alt="...">
+                                    <p>
+                                        The Sikh And Their Litrature
+                                    </p>
+                                    </a>
+                                </div>
+                                <div class="col-3 book">
+                                    <a href="C2.html" target="_blank">
+                                    <img src="./img/books/C2B3P1.jpg" height="300px" width="200px" class="d-block w-100" alt="...">
+                                    <p>
+                                        Harry Portter Series
+                                    </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div id="heading-award-winner" class="heading-right-container-books">
+                                <span>
+                                    Award Winner
+                                </span>
+                            </div>
+                            <div class="row box">
+                                <div class="col-3 book">
+                                    <a href="C4B1.html" target="_blank">
+                                    <img src="./img/books/C4B1P1.webp" height="300px" width="200px" class="d-block w-100" alt="...">
+                                    <p>
+                                        The Boyfriend Project
+                                    </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <hr style="border: 3px solid black;">
+
+                <div id="carouselExampleControls-4" class="carousel carousel-dark carousel-right-container-books slide "
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <div id="heading-featured-authors" class="heading-right-container-books">
+                                <span>
+                                    Featured Authors
+                                </span>
+                            </div>
+                            <div class="row box">
+                                <div class="col-3 book">
+                                    <a href="A1.html" target="_blank">
+                                    <img src="./img/authors/jkrowlings.webp" height="300px" width="200px" class="d-block w-100" alt="...">
+                                    <p>
+                                        J.K. Rowlings
+                                    </p>
+                                    </a>
+                                </div>
+                                <div class="col-3 book">
+                                    <a href="C1B4.html" target="_blank">
+                                    <img src="./img/authors/robert.jpg" height="300px" width="200px" class="d-block w-100" alt="...">
+                                    <p>
+                                        By Robert T. Kiyosaki
+                                    </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div id="heading-featured-authors" class="heading-right-container-books">
+                                <span>
+                                    Featured Authors
+                                </span>
+                            </div>
+                            <div class="row box">
+                                
+                                <div class="col-3 book">
+                                    <a href="A2.html" target="_blank">
+                                    <img src="./img/authors/stephenhawking.jpg" height="300px" width="200px" class="d-block w-100" alt="...">
+                                    <p>
+                                        Stephen Hawking
+                                    </p>
+                                    </a>
+                                </div>
+                                <div class="col-3 book">
+                                    <a href="C4B1.html" target="_blank">
+                                    <img src="./img/authors/farrah.jpg" height="300px" width="200px" class="d-block w-100" alt="...">
+                                    <p>
+                                        Farrah Rochon
+                                    </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div id="heading-featured-authors" class="heading-right-container-books">
+                                <span>
+                                    Featured Authors
+                                </span>
+                            </div>
+                            <div class="row box">
+                                <div class="col-3 book">
+                                    <a href="C1B3.html" target="_blank">
+                                    <img src="img/authors/david.jpg" height="300px" width="200px" class="d-block w-100" alt="...">
+                                    <p>
+                                        David D. Burns
+                                    </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-4"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-4"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <hr style="border: 3px solid black;">
+            </div>
+        </section>
+    </main>
+    <!-- footer section -->
+    <footer id="footer-end">
+        <!-- logo of our page -->
+        <div id="footer-data">
+            <div>
+                <a href="index.html"><img src=".\logos\caves2.png" class="logo"></a>
+            </div>
+            <div class="about-us">
+                <h1>About Us</h1>
+                <ul>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="locateus.html">Locate Us</a></li>
+                    <li><a href="contactus.html">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="help">
+                <h1>Help</h1>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                    <li><a href="termsandcondition.html">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="follow-us">
+                <h1>Follow Us</h1>
+                <ul>
+                    <li class="fevicon" id="facebook"><a href="https://facebook.com" target="_blank"><img
+                                src=".\icons\facebook.png" alt="profile facebook" height="40px"></a></li>
+                    <li class="fevicon" id="instagram"><a href="https://instagram.com" target="_blank"><img
+                                src=".\icons\instagram.png" alt="profile instagram" height="40px"></a></li>
+                    <li class="fevicon" id="twitter"><a href="https://twitter.com" target="_blank"><img
+                                src=".\icons\twitter.png" alt="profile twitter" height="40px"></a></li>
+                    <li class="fevicon" id="gmail"><a href="https://gmail.com" target="_blank"><img src=".\icons\gmail.png"
+                                alt="mail" height="40px"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="/jquery-3.6.0.js"></script>
+    <script src="./script_home.js"></script>
+</body>
+
+</html>

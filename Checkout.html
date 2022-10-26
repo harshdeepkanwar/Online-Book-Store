@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2> Checkout </h2>
+<p>The ordered product(s) will be delivered in 18-20 business days .</p>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/index.html" onsubmit="return validation()">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="" autocomplete="off">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="" autocomplete="off">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Mobile Number</label>
+            <input type="text" id="mobile" name="mobile" placeholder="" autocomplete="off">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="" autocomplete="off">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="" autocomplete="off">
+              </div>
+              <div class="col-50">
+                <label for="pin">Pin</label>
+                <input type="text" id="pin" name="pin" placeholder="" autocomplete="off">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="" autocomplete="off">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="" autocomplete="off">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="" autocomplete="off">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="" autocomplete="off">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="" autocomplete="off">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b></b></span></h4>
+      <p><a href="#"></a> <span class="price"></span></p>
+      <p><a href="#"></a> <span class="price"></span></p>
+      <p><a href="#"></a> <span class="price"></span></p>
+      <p><a href="#"></a> <span class="price"></span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b id="demo"></b></span></p>
+    </div>
+  </div>
+</div>
+<script>
+  function getParams(){
+      var idx = document.URL.indexOf('?');
+      var params = new Array();
+      if (idx != -1) {
+          var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+          for (var i=0; i<pairs.length; i++){
+              nameVal = pairs[i].split('=');
+              params[nameVal[0]] = nameVal[1];
+          }
+      }
+      return params;
+  }
+  params = getParams();
+  firstname = unescape(params["price"]);
+  document.write(firstname );
+  document.getElementById("demo").innerHTML =firstname;
+</script>
+<script>
+  let error = true;
+
+  function validation(){
+    var user = document.getElementById('fname').value;
+    var email = document.getElementById('email').value;
+    var mobile = document.getElementById('mobile').value;
+    var city = document.getElementById('city').value;
+    var state = document.getElementById('state').value;
+    var pin = document.getElementById('pin').value;
+    var name = document.getElementById('cname').value;
+    var cnum = document.getElementById('ccnum').value;
+    var expmonth = document.getElementById('expmonth').value;
+    var expyear = document.getElementById('expyear').value;
+    var cvv = document.getElementById('cvv').value;
+
+    if(user == ''){
+      alert("Invalid Name");
+      return false;
+    }
+
+    if(!isNaN(user)){
+      alert("Numbers not Allowed");
+      return false;
+    }
+
+    if((user.length <= 3 ) || (user.length >=50)){
+      alert("User length must be between 3 & 50");
+      return false;
+    }
+
+    if(email == ''){
+      alert("Invalid Email");
+      return false;
+    }
+
+    if(email.indexOf('@') <= 0){
+      alert("Invalid @ position");
+      return false;
+    }
+
+    if((email.charAt(email.length-4)) != '.' && (email.charAt(email.length-3)!= '.')){
+      alert("Invalid Period(.) position");
+      return false;
+    }
+
+    if(mobile == ''){
+      alert("Invalid Mobile Number");
+      return false;
+    }
+
+    if(isNaN(mobile)){
+      alert("Mobile NUmber:  Not a Number");
+      return false;
+    }
+
+    if(mobile.length != 10){
+      alert("Mobile Number must be of 10 digits.");
+      return false;
+    }
+
+    if(city == ''){
+      alert("Invalid City");
+      return false;
+    }
+
+    if((city.length <=2) || (city.length >20)){
+      alert("City not Found");
+      return false;
+    }
+
+    if(state == ''){
+      alert("Invalid State");
+      return false;
+    }
+
+    if((state.length <=2) || (state.length >50)){
+      alert("State not Found");
+      return false;
+    }
+
+    if(pin == ''){
+      alert("Invalid pin");
+      return false;
+    }
+
+    if(isNaN(pin)){
+      alert("Pin:  Not a Number");
+      return false;
+    }
+
+    if(pin.length != 6){
+      alert("Pin must be of 6 characters");
+      return false;
+    }
+
+    if(name == ''){
+      alert("Invalid Name on Card")
+      return false;
+    }
+
+    if(cnum == ''){
+      alert("Invalid Card Number");
+      return false;
+    }
+
+    if(isNaN(cnum)){
+      alert("Card Number:  Not a Number");
+      return false;
+    }
+
+    if(cnum.length != 16){
+      alert("Card Number must be of 16 digits");
+      return false;
+    }
+
+    if(expmonth == ''){
+      alert("Invalid Expiry Month");
+      return false;
+    }
+
+    if(isNaN(expmonth)){
+      alert("Expiry Month:  Not a Nubmer");
+      return false;
+    }
+
+    if(!(expmonth >= 1 && expmonth <=12)){
+      alert("Enter value between 1 and 12");
+      return false;
+    }
+
+    if(expyear == ''){
+      alert("Invalid Expiry Year");
+      return false;
+    }
+
+    if(isNaN(expyear)){
+      alert("Expiry Year:  Not a Nubmer");
+      return false;
+    }
+
+    if(!(expyear >= 2022 && expyear <= 2035)){
+      alert("Enter value between 2022 & 2035");
+      return false;
+    }
+
+    if(cvv == ''){
+      alert("Invalid CVV");
+      return false;
+    }
+
+    if(isNaN(cvv)){
+      alert("CVV:  Not a Number");
+      return false;
+    }
+
+    if(cvv.length != 3){
+      alert("CVV must be of 3 letters");
+      return false;
+    }
+
+
+    alert("Success");
+  }
+
+</script>
+
+</body>
+</html>

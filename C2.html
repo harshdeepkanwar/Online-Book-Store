@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+    <title>Fiction Books | Caves</title>
+    <!-- <link rel="stylesheet" href="css_common.css">
+    <link rel="stylesheet" href="style1.css"> -->
+    <link rel="stylesheet" href="bookstyle1.css">
+    <link rel="stylesheet" href="bookpreview.css">
+    <link rel="stylesheet" href="style2.css">
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="header1">
+            <div id="logo">
+                <a href="index.html"><img src=".\logos\caves2.png" alt="logo-of-caves"></a>
+            </div>
+            <div id="location">
+                <div id="location-logo">
+    
+                    <img src=".\icons\location.png" alt="" height="40px" class="icon-location">
+                    <select id="mySelect" onchange="myFunction()">
+                        <!-- <option value=""><input type="text"></option> -->
+                        <option value="none">your location</option>
+                        <option value="New Delhi">New Delhi</option>
+                        <option value="Noida">Noida</option>
+                        <option value="Chandighar">Chandighar</option>
+                        <option value="Panchkula">Panchkula</option>
+                    </select>
+                </div>
+                
+            </div>
+            <div id="search">
+                <input type="search" placeholder="search.">
+            </div>
+            <div id="login">
+                <a href="login.html"><button><a href="login.html">login</a> &nbsp <a
+                            href="signup.html">signup</a></button></a>
+            </div>
+            <div id="cart">
+                
+            </div>
+            <div id="more">
+                <div class="more">
+                    <img src=".\icons\more.png" alt="more" class="more-img"></i>
+                    <div class="more-content">
+                        <p>welcome to caves.</p>
+                        <p>for any query you can <a href="contactus.html">contact</a> us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="header2">
+            <div class="category-box">
+                <button class="dropdown-category"><i>Chategories</i></button>
+                <div class="dropdown-content">
+                    <a href="C1.html">Human Development</a>
+                    <a href="C2.html">Fiction</a>
+                    <a href="C3.html">Sports</a>
+                    <a href="C4.html">Love</a>
+                    <a href="C5.html">Religion</a>
+                    <a href="C6.html">Science</a>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        <section>
+            <div id="heading-category" class="category-heading">
+                <h1>
+                    Fiction !!!
+                </h1>
+            </div>
+            <div id="container-category-books" class="category-containers">
+                <div class="single-book-container">
+                    <div id="imgB1" class="image-preview">
+                        <a href="C2B1.html" target="_blank"><img src="./img/books/C2B1P1.png" alt="Harry Potter And The Sorcerer's Stone"></a>
+                    </div>
+                    <div class="book-detail-preview">
+                        <a href="C2B1.html" target="_blank">
+                            <h2>Harry Potter And The Sorcerer's Stone (Paperback)</h2>
+                        </a>
+                        <div class="single-book-description">
+                            <p><span class="description-word" style="font-size: small;">Description : </span> Escape to Hogwarts with the unmissable series that has sparked a lifelong reading journey for children and families all over the world. The magic starts here.<br>
+                            Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. The magic starts here!<br>
+                            These editions of the classic and internationally bestselling Harry Potter series feature thrilling jacket artwork by award-winning illustrator Jonny Duddle. They are the perfect starting point for anyone who's ready to lose themselves in the greatest children's story of all time.
+                            </p>
+                        </div>
+                        <div class="book-price">
+                            <div class="price">
+                                <div class="price-info">
+                                    <div class="original">
+                                        <label id="C1B1_OriginalPrice">Rs. 325</label>
+                                    </div>
+                                    <div class="ourprice">
+                                        <label id="C1B1_ourPrice">Rs.299</label>
+                                    </div>
+                                </div>
+                                <div id="C1B1_Discount" class="discount">8%<br><span> OFF </span></div>
+                            </div>
+                            <div class="stock-info">
+                                <div id="C1B1_Available" class="available">Available</div>
+                                <div class="shipping-info">
+                                    <label id="C1B1_Business">Ships within <b>18-20 Business Days</b></label>
+                                    <label id="C1B1_shipping"><br>Rs.39 shipping per item.</label>
+                                    
+                                    <div id="divNotifyMsg" class="notifymebox" style="display: none;">We will notify you once this book available in stock.</div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-book-container">
+                    <div id="imgB2" class="image-preview">
+                        <a href="C2B2.html" target="_blank"><img src="./img/books/C2B2P1.png" alt="Harry Potter And The Chamber of Secrets"></a>
+                    </div>
+                    <div class="book-detail-preview">
+                        <a href="C2B2.html" target="_blank">
+                            <h2>Harry Potter And The Chamber of Secrets (Paperback)</h2>
+                        </a>
+                        <div class="single-book-description">
+                            <p><span class="description-word" style="font-size: small;">Description : </span> Harry Potter's summer has included the worst birthday ever, doomy warnings from a house-elf called Dobby, and rescue from the Dursleys by his friend Ron Weasley in a magical flying car! Back at Hogwarts School of Witchcraft and Wizardry for his second year, Harry hears strange whispers echo through empty corridors - and then the attacks start. Students are found as though turned to stone . Dobby's sinister predictions seem to be coming true.<br>
+                            These new editions of the classic and internationally bestselling, multi-award-winning series feature instantly pick-up-able new jackets by Jonny Duddle, with huge child appeal, to bring Harry Potter to the next generation of readers. It's time to PASS THE MAGIC ON <br>
+                            </p>
+                        </div>
+                        <div class="book-price">
+                            <div class="price">
+                                <div class="price-info">
+                                    <div class="original">
+                                        <label id="C1B1_OriginalPrice">Rs. 400</label>
+                                    </div>
+                                    <div class="ourprice">
+                                        <label id="C1B1_ourPrice">Rs.320</label>
+                                    </div>
+                                </div>
+                                <div id="C1B1_Discount" class="discount">20%<br><span> OFF </span></div>
+                            </div>
+                            <div class="stock-info">
+                                <div id="C1B1_Available" class="available">Available</div>
+                                <div class="shipping-info">
+                                    <label id="C1B1_Business">Ships within <b>18-20 Business Days</b></label>
+                                    <label id="C1B1_shipping"><br>Rs.39 shipping per item.</label>
+                                    
+                                    <div id="divNotifyMsg" class="notifymebox" style="display: none;">We will notify you once this book available in stock.</div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="single-book-container">
+                    <div id="imgB3" class="image-preview">
+                        <a href="C2B3.html" target="_blank"><img src="./img/books/C2B3P1.jpg" alt="Harry Potter and the Prisoner of Azkaban"></a>
+                    </div>
+                    <div class="book-detail-preview">
+                        <a href="C2B3.html" target="_blank">
+                            <h2>Harry Potter and the Prisoner of Azkaban Illustrated Edtn(Hardcover)</h2>
+                        </a>
+                        <div class="single-book-description">
+                            <p><span class="description-word" style="font-size: small;">Description : </span>Escape to Hogwarts with the unmissable series that has sparked a lifelong reading journey for children and families all over the world. The magic starts here.<br>
+                            Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. The magic starts here!<br>
+                            These editions of the classic and internationally bestselling Harry Potter series feature thrilling jacket artwork by award-winning illustrator Jonny Duddle. They are the perfect starting point for anyone who's ready to lose themselves in the greatest children's story of all time.
+                            <br>
+                            </p>
+                        </div>
+                        <div class="book-price">
+                            <div class="price">
+                                <div class="price-info">
+                                    <div class="original">
+                                        <label id="C1B1_OriginalPrice">Rs. 325</label>
+                                    </div>
+                                    <div class="ourprice">
+                                        <label id="C1B1_ourPrice">Rs.299</label>
+                                    </div>
+                                </div>
+                                <div id="C1B1_Discount" class="discount">8%<br><span> OFF </span></div>
+                            </div>
+                            <div class="stock-info">
+                                <div id="C1B1_Available" class="available">Available</div>
+                                <div class="shipping-info">
+                                    <label id="C1B1_Business">Ships within <b>18-20 Business Days</b></label>
+                                    <label id="C1B1_shipping"><br>Rs.39 shipping per item.</label>
+                                    
+                                    <div id="divNotifyMsg" class="notifymebox" style="display: none;">We will notify you once this book available in stock.</div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-book-container">
+                    <div id="imgB4" class="image-preview">
+                        <a href="C2B4.html" target="_blank"><img src="./img/books/C2B4P1.png" alt="Harry Potter and the Goblet of Fire"></a>
+                    </div>
+                    <div class="book-detail-preview">
+                        <a href="C2B4.html" target="_blank">
+                            <h2>Harry Potter and the Goblet of Fire  -Illustrated Edtn(Hardcover)</h2>
+                        </a>
+                        <div class="single-book-description">
+                            <p><span class="description-word" style="font-size: small;">Description : </span>The Triwizard Tournament is to be held at Hogwarts. Only wizards who are over seventeen are allowed to enter - but that doesn't stop Harry dreaming that he will win the competition. Then at Hallowe'en, when the Goblet of Fire makes its selection, Harry is amazed to find his name is one of those that the magical cup picks out. He will face death-defying tasks, dragons and Dark wizards, but with the help of his best friends, Ron and Hermione, he might just make it through - alive!<br>
+                            These new editions of the classic and internationally bestselling, multi-award-winning series feature instantly pick-up-able new jackets by Jonny Duddle, with huge child appeal, to bring Harry Potter to the next generation of readers. It's time to PASS THE MAGIC ON .<br>
+                            </p>
+                        </div>
+
+
+                        <div class="book-price">
+                            <div class="price">
+                                <div class="price-info">
+                                    <div class="original">
+                                        <label id="C1B1_OriginalPrice">Rs. 550</label>
+                                    </div>
+                                    <div class="ourprice">
+                                        <label id="C1B1_ourPrice">Rs.440</label>
+                                    </div>
+                                </div>
+                                <div id="C1B1_Discount" class="discount">20%<br><span> OFF </span></div>
+                            </div>
+                            <div class="stock-info">
+                                <div id="C1B1_Available" class="available">Available</div>
+                                <div class="shipping-info">
+                                    <label id="C1B1_Business">Ships within <b>18-20 Business Days</b></label>
+                                    <label id="C1B1_shipping"><br>Rs.39 shipping per item.</label>
+                                    
+                                    <div id="divNotifyMsg" class="notifymebox" style="display: none;">We will notify you once this book available in stock.</div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="single-book-container">
+                    <div id="imgB5" class="image-preview">
+                        <a href="C2B5.html" target="_blank"><img src="./img/books/C2B5P1.jpg" alt="Harry Potter and the Order of the Phoenix"></a>
+                    </div>
+                    <div class="book-detail-preview">
+                        <a href="C2B5.html" target="_blank">
+                            <h2>Harry Potter and the Order of the Phoenix (Paperback)</h2>
+                        </a>
+                        <div class="single-book-description">
+                            <p><span class="description-word" style="font-size: small;">Description : </span> Dark times have come to Hogwarts. After the Dementors' attack on his cousin Dudley, Harry Potter knows that Voldemort will stop at nothing to find him. There are many who deny the Dark Lord's return, but Harry is not alone: a secret order gathers at Grimmauld Place to fight against the Dark forces. Harry must allow Professor Snape to teach him how to protect himself from Voldemort's savage assaults on his mind. But they are growing stronger by the day and Harry is running out of time.<br>
+                            These new editions of the classic and internationally bestselling, multi-award-winning series feature instantly pick-up-able new jackets by Jonny Duddle, with huge child appeal, to bring Harry Potter to the next generation of readers. It's time to PASS THE MAGIC ON .<br>
+                            </p>
+                        </div>
+
+
+                        <div class="book-price">
+                            <div class="price">
+                                <div class="price-info">
+                                    <div class="original hidden">
+                                        <label id="C1B1_OriginalPrice">Rs. 554</label>
+                                    </div>
+                                    <div class="ourprice">
+                                        <label id="C1B1_ourPrice">Rs.554</label>
+                                    </div>
+                                </div>
+                                <div id="C1B1_Discount" class="discount hidden">20%<br><span> OFF </span></div>
+                            </div>
+                            <div class="stock-info">
+                                <div id="C1B1_Available" class="available">Available</div>
+                                <div class="shipping-info">
+                                    <label id="C1B1_Business">Ships within <b>18-20 Business Days</b></label>
+                                    <label id="C1B1_shipping"><br>Rs.39 shipping per item.</label>
+                                    
+                                    <div id="divNotifyMsg" class="notifymebox" style="display: none;">We will notify you once this book available in stock.</div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="single-book-container">
+                    <div id="imgB6" class="image-preview">
+                        <a href="C2B6.html" target="_blank"><img src="./img/books/C2B6P1.jpg" alt="Harry Potter and the Half Blood Prince"></a>
+                    </div>
+                    <div class="book-detail-preview">
+                        <a href="C2B6.html" target="_blank">
+                            <h2>Harry Potter and the Half Blood Prince (Paperback)</h2>
+                        </a>
+                        <div class="single-book-description">
+                            <p><span class="description-word" style="font-size: small;">Description : </span>When Dumbledore arrives at Privet Drive one summer night to collect Harry Potter, his wand hand is blackened and shrivelled, but he does not reveal why. Secrets and suspicion are spreading through the wizarding world, and Hogwarts itself is not safe. Harry is convinced that Malfoy bears the Dark Mark: there is a Death Eater amongst them. Harry will need powerful magic and true friends as he explores Voldemort's darkest secrets, and Dumbledore prepares him to face his destiny.<br>
+                            These new editions of the classic and internationally bestselling, multi-award-winning series feature instantly pick-up-able new jackets by Jonny Duddle, with huge child appeal, to bring Harry Potter to the next generation of readers. It's time to PASS THE MAGIC ON.<br>
+                            </p>
+                        </div>
+
+
+                        <div class="book-price">
+                            <div class="price">
+                                <div class="price-info">
+                                    <div class="original">
+                                        <label id="C1B1_OriginalPrice">Rs. 500</label>
+                                    </div>
+                                    <div class="ourprice">
+                                        <label id="C1B1_ourPrice">Rs.440</label>
+                                    </div>
+                                </div>
+                                <div id="C1B1_Discount" class="discount">12%<br><span> OFF </span></div>
+                            </div>
+                            <div class="stock-info">
+                                <div id="C1B1_Available" class="available">Available</div>
+                                <div class="shipping-info">
+                                    <label id="C1B1_Business">Ships within <b>18-20 Business Days</b></label>
+                                    <label id="C1B1_shipping"><br>Rs.39 shipping per item.</label>
+                                    
+                                    <div id="divNotifyMsg" class="notifymebox" style="display: none;">We will notify you once this book available in stock.</div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="single-book-container">
+                    <div id="imgB7" class="image-preview">
+                        <a href="C2B7.html" target="_blank"><img src="./img/books/C2B7P1.jpg" alt="Harry Potter and the Deathly Hallows"></a>
+                    </div>
+                    <div class="book-detail-preview">
+                        <a href="C2B7.html" target="_blank">
+                            <h2>Harry Potter and the Deathly Hallows  (Paperback)</h2>
+                        </a>
+                        <div class="single-book-description">
+                            <p><span class="description-word" style="font-size: small;">Description : </span>'Give me Harry Potter, and I shall leave the school untouched. Give me Harry Potter, and you will be rewarded' Lord Voldemort</b><br>
+                            Harry Potter is preparing to leave the Dursleys and Privet Drive for the last time. But the future that awaits him is full of danger, not only for him, but for anyone close to him - and Harry has already lost so much. Only by destroying Voldemort's remaining Horcruxes can Harry free himself and overcome the Dark Lord's forces of evil.<br>
+                            In this dramatic conclusion to the Harry Potter series, Harry must leave his most loyal friends behind, and in a final perilous journey find the strength and the will to face his terrifying destiny: a deadly confrontation that is his alone to fight.<br>
+                            These adult editions have been stylishly redesigned to showcase Andrew Davidson's beautiful woodcut cover artwork.<br>
+                            </p>
+                        </div>
+
+
+                        <div class="book-price">
+                            <div class="price">
+                                <div class="price-info">
+                                    <div class="original">
+                                        <label id="C1B1_OriginalPrice">Rs. 600</label>
+                                    </div>
+                                    <div class="ourprice">
+                                        <label id="C1B1_ourPrice">Rs.540</label>
+                                    </div>
+                                </div>
+                                <div id="C1B1_Discount" class="discount">10%<br><span> OFF </span></div>
+                            </div>
+                            <div class="stock-info">
+                                <div id="C1B1_Available" class="available">Available</div>
+                                <div class="shipping-info">
+                                    <label id="C1B1_Business">Ships within <b>18-20 Business Days</b></label>
+                                    <label id="C1B1_shipping"><br>Rs.39 shipping per item.</label>
+                                    
+                                    <div id="divNotifyMsg" class="notifymebox" style="display: none;">We will notify you once this book available in stock.</div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="single-book-container">
+                    <div id="imgB8" class="image-preview">
+                        <a href="C2B8.html" target="_blank"><img src="./img/books/C2B8P1.jpg" alt="Harry Potter and the Cursed Child - Parts One and Two"></a>
+                    </div>
+                    <div class="book-detail-preview">
+                        <a href="C2B8.html" target="_blank">
+                            <h2>Harry Potter and the Cursed Child - Parts One and Two  (Paperback)</h2>
+                        </a>
+                        <div class="single-book-description">
+                            <p><span class="description-word" style="font-size: small;">Description : </span>The official playscript of the original West End production of Harry Potter and the Cursed Child.<br>
+                            It was always difficult being Harry Potter and it isn't much easier now that he is an overworked employee of the Ministry of Magic, a husband, and father of three school-age children.<br>
+                            While Harry grapples with a past that refuses to stay where it belongs, his youngest son Albus must struggle with the weight of a family legacy he never wanted. As past and present fuse ominously, both father and son learn the uncomfortable truth: sometimes, darkness comes from unexpected places.<br>
+                            The playscript for Harry Potter and the Cursed Child was originally released as a 'special rehearsal edition' alongside the opening of Jack Thorne's play in London's West End in summer 2016. Based on an original story by J.K. Rowling, John Tiffany and Jack Thorne, the play opened to rapturous reviews from theatregoers and critics alike, while the official playscript became an immediate global bestseller.<br>
+                            </p>
+                        </div>
+
+
+                        <div class="book-price">
+                            <div class="price">
+                                <div class="price-info">
+                                    <div class="original">
+                                        <label id="C1B1_OriginalPrice">Rs. 800</label>
+                                    </div>
+                                    <div class="ourprice">
+                                        <label id="C1B1_ourPrice">Rs.760</label>
+                                    </div>
+                                </div>
+                                <div id="C1B1_Discount" class="discount">5%<br><span> OFF </span></div>
+                            </div>
+                            <div class="stock-info">
+                                <div id="C1B1_Available" class="available">Available</div>
+                                <div class="shipping-info">
+                                    <label id="C1B1_Business">Ships within <b>18-20 Business Days</b></label>
+                                    <label id="C1B1_shipping"><br>Rs.39 shipping per item.</label>
+                                    
+                                    <div id="divNotifyMsg" class="notifymebox" style="display: none;">We will notify you once this book available in stock.</div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+    </main>
+    <!-- footer section -->
+    <footer class="footer" id="footer">
+        <!-- logo of our page -->
+        <div class="footer-logo">
+            <a href="index.html"><img src=".\logos\caves2.png"></a>
+        </div>
+        <div class="about-us">
+            <h1>About Us</h1>
+            <ul>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="locateus.html">Locate Us</a></li>
+                <li><a href="contactus.html">Blogs</a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <h1>Help</h1>
+            <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="termsandcondition.html">Terms and Conditions</a></li>
+            </ul>
+        </div>
+        <div class="follow-us">
+            <h1>Follow Us</h1>
+            <ul>
+                <li class="fevicon" id="facebook"><a href="https://facebook.com" target="_blank"><img
+                            src=".\icons\facebook.png" alt="profile facebook" height="40px"></a></li>
+                <li class="fevicon" id="instagram"><a href="https://instagram.com" target="_blank"><img
+                            src=".\icons\instagram.png" alt="profile instagram" height="40px"></a></li>
+                <li class="fevicon" id="twitter"><a href="https://twitter.com" target="_blank"><img
+                            src=".\icons\twitter.png" alt="profile twitter" height="40px"></a></li>
+                <li class="fevicon" id="gmail"><a href="https://gmail.com" target="_blank"><img src=".\icons\gmail.png"
+                            alt="mail" height="40px"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

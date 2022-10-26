@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+    <title>Failing Forward | Caves</title>
+    <link rel="stylesheet" href="bookstyle1.css">
+    <link rel="stylesheet" href="style2.css">
+    <style>        
+        .book-image img{
+            height: 460px;
+        }     
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header1">
+            <div id="logo">
+                <a href="index.html"><img src=".\logos\caves2.png" alt="logo-of-caves"></a>
+            </div>
+            <div id="location">
+                <div id="location-logo">
+    
+                    <img src=".\icons\location.png" alt="" height="40px" class="icon-location">
+                    <select id="mySelect" onchange="myFunction()">
+                        <!-- <option value=""><input type="text"></option> -->
+                        <option value="none">your location</option>
+                        <option value="New Delhi">New Delhi</option>
+                        <option value="Noida">Noida</option>
+                        <option value="Chandighar">Chandighar</option>
+                        <option value="Panchkula">Panchkula</option>
+                    </select>
+                </div>
+                
+            </div>
+            <div id="search">
+                <input type="search" placeholder="search.">
+            </div>
+            <div id="login">
+                <a href="login.html"><button><a href="login.html">login</a> &nbsp <a
+                            href="signup.html">signup</a></button></a>
+            </div>
+            <div id="cart">
+                
+            </div>
+            <div id="more">
+                <div class="more">
+                    <img src=".\icons\more.png" alt="more" class="more-img"></i>
+                    <div class="more-content">
+                        <p>welcome to caves.</p>
+                        <p>for any query you can <a href="contactus.html">contact</a> us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="header2">
+            <div class="category-box">
+                <button class="dropdown-category"><i>Chategories</i></button>
+                <div class="dropdown-content">
+                    <a href="C1.html">Human Development</a>
+                    <a href="C2.html">Fiction</a>
+                    <a href="C3.html">Sports</a>
+                    <a href="C4.html">Love</a>
+                    <a href="C5.html">Religion</a>
+                    <a href="C6.html">Science</a>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <main><br>
+        <section class="book-section">
+            <div class="book-image">
+                <img src=".\img\books\C1B2P1.jpg" alt="Failing Forward: Turning Mistakes into Stepping Stones for Success" >
+            </div><div class="book-info">
+                <div class="book-detais">
+                    <h1>Failing Forward: Turning Mistakes into Stepping Stones for Success<br><span>(Paperback)</span></h1>
+                    <p>| Author : John C. Maxwell | Released : 2000</p>
+                    <!-- description of book -->
+                    
+                    <p class="description"><span class="description-word">Description : </span>America's most trusted leadership expert will transform your attitude and belief about failure and empower you to make positive changes in your life to achieve your full potential. Are some people born to achieve anything they want while others struggle? Call them lucky, blessed, or possessors of the Midas touch. What is the real reason for their success? Is it family background, wealth, greater opportunities, high morals, an easy childhood? New York Times best-selling author John C. Maxwell has the answer: The difference between average people and achieving people is their perception of and response to failure. Most people are never prepared to deal with failure. Maxwell says that if you are like him, coming out of school, you feared it, misunderstood it, and ran away from it. But Maxwell has learned to make failure his friend, and he can teach you to do the same. "I want to help you learn how to confidently look the prospect of failure in the eye and move forward anyway," says Maxwell. "Because in life, the question is not if you will have problems, but how you are going to deal with them. Stop failing backward and start failing forward!"
+                    <br>
+                    </p>
+                </div>
+                <div class="book-price">
+                    <div class="price">
+                        <div class="price-info">
+                            <div class="original">
+                                <label id="C1B1_OriginalPrice"><span>&#8377;</span>999</label>
+                            </div>
+                            <div class="ourprice">
+                                <label id="C1B1_ourPrice"><span>&#8377;</span>899</label>
+                            </div>
+                        </div>
+                        <div id="C1B1_Discount" class="discount">10%<br><span> OFF </span></div>
+                    </div>
+                    <div class="stock-info">
+                        <div id="C1B1_Available" class="available">Available</div>
+                        <div class="shipping-info">
+                            <label id="C1B1_Business">Ships within <b>18-20 Business Days</b></label>
+                            <label id="C1B1_shipping"><br>Rs.39 shipping per item.</label>
+                            
+                            <label id="divNotifyMsg" class="notifymebox hidden"><br>We will notify you once this book available in stock.</label>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="payment-details">
+                    <div class="button-container">
+                        <form method="get" action="Checkout.html">
+                            <input type="text" name="price" value="Rs.899" style="display: none;">
+                            <button value="" class="buy-button">buy now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="others">
+            <span>related categories : </span>
+            <div class="related">
+                <a href="C1.html">Human Development</a>&nbsp; , &nbsp; <a href="C2.html">fiction</a>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+    </main>
+    <!-- footer section -->
+    <footer class="footer" id="footer">
+        <!-- logo of our page -->
+        <div class="footer-logo">
+            <a href="index.html"><img src=".\logos\caves2.png"></a>
+        </div>
+        <div class="about-us">
+            <h1>About Us</h1>
+            <ul>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="locateus.html">Locate Us</a></li>
+                <li><a href="contactus.html">Blogs</a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <h1>Help</h1>
+            <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="termsandcondition.html">Terms and Conditions</a></li>
+            </ul>
+        </div>
+        <div class="follow-us">
+            <h1>Follow Us</h1>
+            <ul>
+                <li class="fevicon" id="facebook"><a href="https://facebook.com" target="_blank"><img
+                            src=".\icons\facebook.png" alt="profile facebook" height="40px"></a></li>
+                <li class="fevicon" id="instagram"><a href="https://instagram.com" target="_blank"><img
+                            src=".\icons\instagram.png" alt="profile instagram" height="40px"></a></li>
+                <li class="fevicon" id="twitter"><a href="https://twitter.com" target="_blank"><img
+                            src=".\icons\twitter.png" alt="profile twitter" height="40px"></a></li>
+                <li class="fevicon" id="gmail"><a href="https://gmail.com" target="_blank"><img src=".\icons\gmail.png"
+                            alt="mail" height="40px"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
